@@ -1,6 +1,6 @@
 name: CI | Build kata-static tarball for s390x
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       stage:
         required: false
@@ -20,12 +20,6 @@ on:
         required: false
         type: string
         default: ""
-    secrets:
-      CI_HKD_PATH:
-        required: true
-      QUAY_DEPLOYER_PASSWORD:
-        required: true
-
 
 permissions: {}
 
